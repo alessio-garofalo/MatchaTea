@@ -1,0 +1,124 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    padding: 0%;
+    margin: 0%;
+    margin-bottom: 100%;
+    
+}
+
+/* Nav Bar */
+.navbar{
+    margin: 0%;
+    width: 100%;
+    height: 10rem;
+    background-color: #78AE6C;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu_drop_down{
+    margin: 4rem 0rem 5rem 5rem;
+    display: inline-block;
+    position: fixed;
+}
+.menu_drop_down_child{
+    display: none;
+    padding: 30px;
+}
+
+.menu_drop_down_child a{ 
+    padding: 5% 10%;
+    color: #78AE6C;
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 30px 30px;
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease;
+}
+
+.menu_drop_down:hover .menu_drop_down_child{ /* effect menu cascade "Hover" */
+    display: block; 
+
+}
+.menu_drop_down_child a:hover{ /* Effect sub menu Hover */
+    color: #ffffff;
+    background-color: #63975863;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(1);
+}
+
+.logo{
+    justify-self: center;
+    grid-column: 2;
+}
+
+.right_nav{
+    justify-self: end;
+    margin-right: 5%;
+}
+
+
+/* CONTACT NOUS */
+.section_contact_nous{
+    position: static;
+    margin: 5% auto auto;
+    max-width: 80rem;
+    font-style: italic;
+    background-color:#78ae6ca1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    border: 3px solid #78ae6cc0;
+}
+
+.choix{
+    margin: 5%;
+}
+
+.title_contact{
+    margin-top: 15%;
+}
+
+.selection{
+    margin: 2%;
+    width: 50%;
+    height: 30px;
+}
+
+.selection:hover{
+    background-color: #78ae6ca1;
+    color: #ffffff;
+}
+
+#contact_message{
+    margin-top: -2%;
+    padding: 5%;
+    width: 50%;
+    height: auto;
+}
+.checkbox{
+    padding: 30px;
+    margin: 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.submit1:hover{
+color: #ffffff;
+background-color: #639758;
+}
+    .submit1{
+    padding: 20px;
+    margin: 30px;
+    color: #000000;
+}
