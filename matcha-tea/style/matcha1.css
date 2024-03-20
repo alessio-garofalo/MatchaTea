@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+}
+
+main {
+    margin-top: -38px;
+}
+
+.sub-header img {
+    padding-top: 38px;
+    max-width: 100%;
+}
+
+#txt-for-subh {
+    font-family: "Parisienne", static;
+    color: #F9F9F9;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: -205px;
+    margin-left: 8px;
+    padding-left: 146px;
+    padding-right: 24px;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.rect_grey {
+    background-color: #D9D9D9;
+    width: 306px;
+    height: 62px;
+    position: absolute;
+    margin-top: 54px;
+
+}
+.rect_grey h3 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: "Glass Antiqua", cursive;
+    margin-top: 13px;
+}
+
+#center_acc img {
+    width: 315px;
+    height: 304px;
+    object-fit: cover;
+    margin-top: 82px;
+    margin-left: 30px;
+    border-radius: 35px;
+}
+
+.grid-lower-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #78AE6C;
+    margin-top: 38px;
+    text-align: center;
+}
+
+.grid-lower-page h2 {
+    color: #F9F9F9;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.grid-lower-page img {
+    max-width: 85%;
+    border-radius: 30px;
+    margin-top: -40px;
+}
+
+.grid-lower-page button {
+    width: 138px;
+    height: 42px;
+    margin-top: 15px;
+    
+}
+
+.grid-lower-page button p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Glass Antiqua", cursive;
+    margin: auto;
+}
+
+button, img {
+    cursor: pointer;
+}
