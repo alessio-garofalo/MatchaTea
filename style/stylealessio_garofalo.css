@@ -27,6 +27,15 @@ body{
     display: inline-block;
     position: fixed;
 }
+.menu_drop_down:hover{
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0%;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    transform: rotate(90deg);
+}
+
 .menu_drop_down_child{
     display: none;
     padding: 30px;
