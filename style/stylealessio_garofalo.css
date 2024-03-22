@@ -9,12 +9,11 @@
 
 body{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
     padding: 0%;
-    margin: 0%;
-    margin-bottom: 100%;
-    
+    margin: 0%;    
 }
 
 /* Nav Bar */
@@ -175,9 +174,14 @@ background-color: #639758;
 /* main */
 
 main{
+    position: static; /* Per consentire il posizionamento assoluto all'interno di main */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
 }
+
+
 
 .img_profile{
     width: 100px;
@@ -200,13 +204,10 @@ main{
 }
 
 .info_perso{
-    text-align: center;
     margin-top: 12rem;
     text-align: center;
-    font-style: italic;
-    font-family: 'IM Fell Great Primer SC', serif;
     background-color: rgba(255, 255, 255, 0.7);
-    max-width: 100%;
+  
 }
 
 .personnel{
@@ -217,7 +218,7 @@ main{
 .num {
     grid-column: 1;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 70% 10%;
     align-items: center; 
 }
 .num1{
@@ -225,6 +226,7 @@ main{
 }
 .prefix {
     grid-column: 3; /* Posiziona il prefix nella seconda colonna */
+    font-size: 12px;
 }
 
 .label{
@@ -238,8 +240,15 @@ padding: 0;
 grid-column: 2;
 padding: 0;
 margin: 5%;
-min-width: 200px;
-max-width: 800px;
+width: 200px;
+}
+
+@media screen and (max-width: 502px) {
+    .selection {
+        margin: 6%;
+        width: 150px;
+    }
+
 }
 
 .btn{
@@ -247,13 +256,14 @@ max-width: 800px;
     grid-column: 3;
     height: 30px;
     width: 30px;
-    padding: 10%;
+    padding: 5%;
     place-self: center;
-    background-image: url('../graphique/profil/icons8-engrenage-32.png');
+    background-image: url(../graphique/profil/icons8-engrenage-32.png);
     background-size: 30px 30px;
     background-repeat: no-repeat;
-    background-position: center; 
-    text-indent: -9999px; 
+    background-position: center;
+    text-indent: -9999px;
+    margin: 0 0 0 -30px; 
 }
 .btn:hover{
     opacity: 0.5;
@@ -279,3 +289,7 @@ max-width: 800px;
     margin-top: 80px;
 }
 
+
+.info_public{
+margin: 15rem 0 0 0;    
+}

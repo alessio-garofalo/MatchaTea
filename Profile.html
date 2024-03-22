@@ -46,36 +46,38 @@
     <!-- iMAGE NOM -->
     <main>
         <section class="info_perso">
+            <h1 class="salsa-regular">Informations personnelles</h1>
             <div><img class="img_profile" src="graphique/profil/profil_img.png" alt="img profile"></div>
             <div class="personnel">
-                    <label class="label" for="name">Nom</label>
+                    <label class="label salsa-regular" for="name">Nom</label>
                     <input class="selection" type="text" name="nom" id="nom">
                     <input class="btn" type="button" value="Changer Nom">
                     
-                    <label class="label" for="surname">Prenom</label>
+                    <label class="label salsa-regular" for="surname">Prenom</label>
                     <input class="selection" type="text" name="prenom" id="surname">
                     <input class="btn" type="button" value="Changer PreNom">
                     
-                    <label class="label" for="address">Address</label>
+                    <label class="label salsa-regular" for="address">Address</label>
                     <input class="selection" type="text" name="address" id="address">
                     <input class="btn" type="button" value="Changer Address">
                     
-                    <label class="label" for="email">Email</label>
+                    <label class="label salsa-regular" for="email">Email</label>
                     <input class="selection" type="email" name="email" id="email">
                     <input class="btn" type="button" value="Changer Email">
                     
                     <div class="num">
-                        <label class="num1" for="tel">Numero</label>
-                        <p class="prefix">+33</p>
+                        <label class="num1 salsa-regular" for="tel">Numero</label>
+                        <p class="prefix salsa-regular">+33</p>
                     </div>
-                    <input class="selection" type="tel" name="tel" id="tel">
+                    <input class="selection" type="tel" name="tel" id="tel" placeholder="
+                    Entrez votre numéro">
                     <input class="btn" type="button" value="Changer Numero">
                     
-                    <label class="label" for="naissance">Date de naissance:</label>
+                    <label class="label salsa-regular" for="naissance">Date de naissance:</label>
                     <input class="selection" type="date" id="dateN" name="dateN">
                     <input class="btn" type="button" value="Changer Date">
                     
-                    <label for="sexe-select" class="label">Sexe:</label>
+                    <label for="sexe-select" class="label salsa-regular">Sexe:</label>
                     <select name="sexe" id="sexe_selection" class="selection">
                         <option value="">--Please choose an option--</option>
                         <option value="Homme">Homme</option>
@@ -86,7 +88,7 @@
                     </select>
                     <input class="btn" type="button" value="Changer Sexe">
                     
-                    <label for="Situation_familiale" class="label">Sélectionner votre situation:</label>
+                    <label for="Situation_familiale salsa-regular" class="label  salsa-regular">Sélectionner votre situation:</label>
                     <select class="selection" id="family_select" name="family">
                         <option value="" >--Please choose an option--</option>
                         <option value="1">Célibataire</option>
@@ -100,9 +102,13 @@
                     <input class="btn" type="button" value="Changer Situation">
             </div>
         </section>
+        <img src="graphique/profil/Photo_back.jpg" alt="Photo_coltivation_matcha">
         <section class="info_public">
 
-            
+            <div>
+                <h1 for="Bio" class="title_contact2 salsa-regular">Bio</h1> 
+                <textarea name="contact" id="Bio"></textarea>
+            </div>
 
         </section>
     </main>
