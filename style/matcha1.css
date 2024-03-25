@@ -309,8 +309,9 @@ p, li, ul {
 }
 
 .add {
+    margin-top: 12px;
     display: none;
-    font-size: 1.3em;
+    font-size: 2.3em;
     color: black;
     padding-right: 12px;
 }
@@ -458,5 +459,11 @@ p, li, ul {
     }
     .container_grid img + div{
         height: 500px;
+    }
+}
+
+@media screen and (max-width: 337px) {
+    .add {
+        font-size: 2em;
     }
 }
