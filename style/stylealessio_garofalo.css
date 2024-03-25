@@ -79,10 +79,6 @@ color: #ffffff;
 background-color: #639758;
 }
 
-
-
-
-
 /* main */
 
 main{
@@ -203,10 +199,11 @@ width: 200px;
 
 
 .layer {
+    display: grid;
     position: relative; /* Assicura che i figli posizionati all'interno siano posizionati relativamente */
     width: 100%; /* Larghezza desiderata dello strato di pagina */
     height: 400px; /* Altezza desiderata dello strato di pagina */
-    margin: 2% auto; /* Centra lo strato di pagina */
+    margin: 2% auto 0; /* Centra lo strato di pagina */
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 1); /* Ombra interna con un raggio di 10px e colore nero */
 }
   
@@ -223,7 +220,35 @@ width: 200px;
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 1);
     transition: transform 0.8s ease, background-color 0.8s ease, color 0.8s ease;
 }
-.info_public{
-margin: 0;    
-}
 
+.Bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+.text_bio {
+    width: 500px; /* Imposta la larghezza massima dell'area di testo */
+    height: 100px; /* Imposta l'altezza desiderata dell'area di testo */
+    margin: 1.5rem;
+    background-color: transparent;
+    border-color: transparent;
+    transition: transform 0.8s ease, background-color 0.8s ease, color 0.8s ease;
+  }
+  .text_bio:hover{
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 1);
+    border-color: #639758e8;
+    background-color: #63975877;
+    transition: transform 2s ease, background-color 1s ease, color 1s ease;
+  }
+  .env{
+    padding: 5px;
+    margin: 2rem;
+    transition: transform 1s ease, background-color 1s ease, color 1s ease;
+  }
+  .env:hover{
+    transition: transform 1s ease, background-color 1s ease, color 1s ease;
+    transform: scale(1.5);
+    color: #ffffff;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.356);
+  }
