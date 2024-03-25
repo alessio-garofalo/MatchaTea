@@ -16,103 +16,10 @@ body{
     margin: 0%;    
 }
 
-/* Nav Bar */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10rem;
-    background-color: #78AE6C;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu_drop_down{
-    display: inline-block;
-    position: fixed;
-    top: 4rem;
-    left: 5%;
-}
-.menu_drop_down_img{
-    transition: transform 0.8s ease;
-}
-.menu_drop_down_img:hover{
-    cursor: pointer;
-}
-#touch:checked + .menu_label .menu_drop_down_img{
-    transform: rotate(90deg);
-
-}
-#touch{
-    position: absolute;
-    height: 0px;
-    opacity: 0;
-}
-.menu_drop_down_child {
-    padding: 10px;
-    clear: both;
-    width: 200px;
-    margin-left: -5%;
-    margin-top: 20px;
-    height: 0px;
-    overflow: hidden;
-    text-align: center;
-    transition: height 2s ease;
-    transition: transform 1.5s ease, background-color 1.5s ease, color 1.5s ease;
-
-}
-.menu_drop_down_child li {
-    padding : 5px;
-    margin: 5px 10px 10px 10px; /* SOPRA DESTRA SOTTO SINISTRA */
-    list-style: none;
-    font-size: 20px;
-    font-family: salsa;
-}
-
-#touch:checked + .menu_label + .menu_drop_down_child {
-    display: block;
-    height: 270px;
-    margin-top: 20px;
-    background-color: #78AE6C;
-}
-
-.menu_drop_down_child li a{
-    color: #78AE6C;
-    background-color: rgba(0, 0, 0, 0.288);
-    padding: 10px 0px;
-    text-decoration: none;
-    display: block;
-    transition: transform 1.5s ease, background-color 1.5s ease, color 1.5s ease;
-}
-
-
-.menu_drop_down_child a:hover{
-    color: #ffffff;
-    font-size: 20px;
-    background-color: #63975863;
-    transition: transform 0.8s ease, background-color 0.8s ease, color 0.8s ease;
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-.logo{
-    justify-self: center;
-    grid-column: 2;
-}
-
-.right_nav{
-    justify-self: end;
-    margin-right: 5%;
-}
-
-
 /* CONTACT NOUS */
 .section_contact_nous{
     position: static;
-    margin: 5% auto auto;
+    margin: 12rem auto 5%;
     max-width: 80rem;
     font-style: italic;
     background-color:#78ae6ca1;
@@ -150,10 +57,15 @@ body{
 }
 
 .checkbox{
-    padding: 30px;
-    margin: 15px;
+    padding: 0 30px 0 5px;
     font-size: 20px;
     color: #ffffff;
+}
+
+.submit{
+    width: 40px;
+    height: 40px;
+
 }
 
 .submit1{
@@ -248,6 +160,10 @@ width: 200px;
         margin: 6%;
         width: 150px;
     }
+    .submit{
+        width: 30px;
+        height: 30px;
+    }
 
 }
 
@@ -267,10 +183,6 @@ width: 200px;
 }
 .btn:hover{
     opacity: 0.5;
-}
-
-.endbox{
-    margin: 80px;
 }
 
 .checkbox{
