@@ -4,6 +4,7 @@ body{
 }
 main{
     background-color:#F9F9F9;
+    margin-top: 12rem;
 }
 #images{
     display: grid;
@@ -30,7 +31,6 @@ main{
         grid-template-columns: 1fr;
         margin: 0px 15px 15px 15px;
     }
-   
      .about > p{
         padding: 10px;
         text-align: justify;
