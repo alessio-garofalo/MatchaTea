@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Matcha Tea</title>
-
+    <title>Nous contacter - Matcha Tea</title>
     <link rel="stylesheet" href="style/stylealessio_garofalo.css">
+    <link rel="stylesheet" href="style/navbar_aleG.css">
+    <link rel="stylesheet" href="style/footer_mika.css">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,26 +18,31 @@
 
 </head>
 <body>
-    <div class="menu_drop_down">
-        <img src="graphique/icon/menu.png" alt="Menu_icon">
-        <div class="menu_drop_down_child">
-            <div><img src="graphique/icon/icons8-sachet-de-thé-48.png" width="30px" alt="home_icon"><a href="">Produit</a></div>
-            <div><img src="graphique/icon/contact.png" width="30px" alt=""><a href="">Contact-nous</a></div>
-    
-        </div>
-    </div>
     <nav class="navbar">
-
-
-        <div class="logo">
-            <img src="graphique/logo.png" width="150px" alt="Logo Matcha Tea Team">
+        <div class="menu_drop_down">
+            <input type="checkbox" id="touch">
+            <label for="touch" class="menu_label">
+                <img class="menu_drop_down_img" src="GRAPHIC\ICO\menu.png" alt="Menu_icon">
+            </label>    
+            <ul class="menu_drop_down_child">
+                <li><a class="salsa-regular" href="shop.html">Shop</a></li>
+                <li><a class="salsa-regular" href="apropos.html">About us</a></li>
+                <li><a class="salsa-regular" href="histoire.html">Notre histoire</a></li>
+                <li><a class="salsa-regular" href="contactnous.html">Nous contacter</a></li>
+            </ul>
         </div>
-        <div class="right_nav">    
-            <a href="index.html"><img src="graphique/icon/home.png" alt="home_icon"></a>
-            <a href="shop.html"> <img src="graphique/icon/shop.png" alt="shop_icon"></a>
-            <a href="user.html"> <img src="graphique/icon/user.png" alt="user_icon"></a>
-        </div>
-    </nav>
+    
+    
+    
+            <div class="logo">
+                <img src="GRAPHIC/LOGO/logo.png" width="150px" alt="Logo Matcha Tea Team">
+            </div>
+            <div class="right_nav">    
+                <a href="index.html"><img src="GRAPHIC\ICO\home.png" alt="home_icon"></a>
+                <a href="shop.html"> <img src="GRAPHIC\ICO\shop.png" alt="shop_icon"></a>
+                <a href="user.html"> <img src="GRAPHIC\ICO\user.png" alt="user_icon"></a>
+            </div>
+        </nav>
 
     <!-- iMAGE NOM -->
 
@@ -56,8 +62,8 @@
                 </div>
             </div>
             <div class="endbox">
-                <input class="submit" type="checkbox" name="politiques" id="checkbox" class="button_accept">
-                <br><br><label for="checkbox" class="checkbox">Accept politiques de confidentialité de l’entreprise.</label>
+                <input class="submit" width="50px" type="checkbox" name="politiques" id="checkbox">
+                <br><label for="checkbox" class="checkbox">Accept politiques de confidentialité de l’entreprise.</label>
                 <br><input class="submit1" type="submit" value="Envoye">
             </div>
 
@@ -65,6 +71,15 @@
     </section>
 
     
-
+    <footer>
+        <div class="logo-footer">
+            <img src="GRAPHIC/LOGO/logo-removebg-preview.png" alt="Logo Matcha Tea">
+        </div>
+        <div class="payment">
+            <img src="GRAPHIC/ICO/icons8-paypal-50.png" alt="paypal">
+            <img src="GRAPHIC/ICO/icons8-master-card-100.png" alt="master card">
+            <img src="GRAPHIC/ICO/icons8-recto-de-carte-de-crédit-50.png" alt="carte de crédit">
+        </div>
+    </footer>
 </body>
 </html>

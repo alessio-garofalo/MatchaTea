@@ -1,11 +1,11 @@
 
 body{
     width: auto;
-    /* margin: 50px 150px 0px 150px ; */
     padding: 5px;
 }
 main{
     background-color:#F9F9F9;
+    margin-top: 12rem;
 }
 #images{
     display: grid;
@@ -23,6 +23,7 @@ main{
     width: 250px;
     height: 250px;
     object-fit: cover;
+    margin-bottom: 3rem;
 }
 p{
     padding: 20px;
@@ -38,7 +39,6 @@ p{
         grid-template-columns: 1fr;
         margin: 0px 15px 15px 15px;
     }
-   
      .about > p{
         padding: 10px;
         text-align: justify;
