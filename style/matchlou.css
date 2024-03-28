@@ -13,9 +13,9 @@ main{
 }
 .title{
     text-align: center;
-    color: rgb(211, 84, 84);
-    font-family: American Typewriter, serif;
-    font-size: 25px;
+    color: rgb(5, 5, 5);
+    font-family: "Salsa", cursive;
+    font-size: 1.5em;
     
 }
 #images > img {
